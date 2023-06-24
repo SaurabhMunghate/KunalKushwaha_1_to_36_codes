@@ -1,0 +1,48 @@
+note 1 : while the function is not finished executing it will remain in stack
+when a function executing it is removes  from the stack and the flow of program is restored to where that function
+was called .
+recursive call
+        if you are calling a function again and again , you can treat it as a separate call in the stack
+        this is called tail recursion
+        this is the last function call
+every call of function will take some memory of computer will excite the memory
+stack overflow error
+- recursion function calling itself
+- it helps us in solving bigger / complex problems in a simple way
+- you can convert recursion solution into iteration (loop) and vive versa
+- space completing
+- it helps  us  in braking bigger problem into smaller problem
+
+break it down into smaller problems
+the base condition is represented by answers we already have
+- recursive tree
+
+how to understand and Approach a problem
+identify if you can brick down problem in the smaller problem
+write recurrence relation if needed
+draw the recurrence tree
+about the tree
+     see the flow of function how they are getting in stack
+     identify and focus on left tree calls and right tree calls
+
+Draw the tree and pointer again and again using pen and paper
+use a debugger to see the flow
+5. see how the value are return at each step
+see where the functions call will come out of , in the end you will come out of the main functions
+
+ VARIABLE :
+ 1.Argument
+ 2.return type
+ 3.body of the function
+
+Q.Binary Search With Recursion
+compering -  0(1)
+Dividing into two half -
+
+Types of Recurrence relation ;-
+1.linear Recurrence relation - Fibonacci number
+2.divide and concurrence Recurrence relation - Binary Search
+(reduce by a factor )
+
+Dynamic programing -- if in the recursion call if two or more recursion call doing the same work
+don't computed again and again

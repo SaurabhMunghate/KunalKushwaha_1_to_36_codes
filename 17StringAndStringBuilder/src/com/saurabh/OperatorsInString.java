@@ -1,0 +1,25 @@
+package com.saurabh;
+
+import java.util.ArrayList;
+
+public class OperatorsInString {
+    public static void main(String[] args) {
+//        System.out.println('a' + 'b'); //195 Sky value
+//        System.out.println("a" + "b"); //ab
+//        System.out.println('a' + 3); //d
+//        System.out.println((char)('a' + 3 ));
+
+//        System.out.println("a" + 1 );
+//        this is same as after a few steps : "a" + "1"
+//        integer will be converted to Integer that will call to String
+
+//        System.out.println("Saurabh" + new ArrayList<>()); // object it will call toString method  on this
+//        System.out.println("Saurabh" + new Integer(56));
+
+        //error   System.out.println( new ArrayList<>() + new Integer(56)); //error , at list only one of the object String
+
+//        String ans = new Integer(56) + " " + new ArrayList<>();
+//        System.out.println(ans);
+        System.out.println("a" + 'b');
+    }
+}

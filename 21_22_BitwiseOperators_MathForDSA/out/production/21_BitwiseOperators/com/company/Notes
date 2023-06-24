@@ -1,0 +1,169 @@
+        and - botha are true
+           when you ans 1 with any number , digits remains the same
+           1 and 1 = 1
+           1 ans 0 = 0
+        or - attlist one should be true
+        Xor - (if and only if)only one should be true
+        complement - revers of binary number
+        continued ahead -
+
+Number System -
+    1.decimal 0,1,2,3,4,5,...9 - base 10 - (456)base10
+    2.binary numbers 1 & 0 - base 2 - (10)base10 - (1010)base2
+     (7)base10 - (111)base2
+    3.Octal base - 0,1,2,3,4,5,6,7 - base is 8
+        binary - 1 and 0
+        decimal - we can use 1 to 9 all digits
+        Octal - only use digits from 0 -til 7 i can not use 8 and 9 ,
+        hexadecimal - 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f   16number total  base 16
+        (10)base10 = (A)base 16     (12)base10 = (C)base16
+
+                 Conversation ----
+* decimal to base b -
+    convert (17)base10 to base 2
+    keep dividing by base , take remainder , write in opposite .
+    17/2 8/2 4/2 2/2 1 write ans in revers (10001)base2 = (17)base10
+
+* base b to decimal -
+convert any base b to decimal .
+    (10001)base2 = ( )base10 ?
+    step 1 - multiply and add the power of base with digit
+    (10001)base2 = ( )base10 ?
+    = 1*2^4 + 0*2^3 + 0*2^2 + 0*2^1 + 1*2^0
+    = 16+0+0+0+1 = (17)base10
+    (21)base8 = ( )base10
+    = 2*8^1 + 1*8^0 = (17)base10
+
+continuing with operators =
+    5-left shift operator (<<)
+        (10)base10 = (1010)base2
+        step 2 - 1010 << 1 = 10100
+        = 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 16 + 4 = 20
+        a << 1 = double that number = 2a
+        a << b = a*2^b   imp
+
+    6-Write shift operator -
+        0011001 >> 1 = 001100 remove one last part
+        a >> b = a/2^b   imp
+
+Questions -
+1.given a no, n find if it is odd or even -
+point - every no. is calculated in binary form internally
+        12+7 =                1100
+(19)base10 = (10011)base2    +0111
+                             10011
+16+2+1 = 19
+
+1 0 0 1 = this will always be even 1 = this always be one and it is odd
+hence - if 2^0 place == 1 = number is odd
+               other wise is even
+last digit known as list significant bit
+
+Questions 2 -
+arr = [2,3,4,1,2,1,3,6,4]
+ans = xor all the numbers , complexity 0(N);
+
+Questions 3 -
+arr = [-2,3,2,4,-5,5,-4]
+ans = 3
+
+Questions 4 -
+find i th bit of a no.
+1 0 1 1 0 1 1 0
+0 0 0 1 0 0 0 0
+and operator use for 5th bit
+this is called a mask , mask with n-1 zeros
+-mast is the separate number or entity you have that allows to get are ans related to it
+1<<4 = 1 0 0 0 0
+1<<(n-1)
+n&(1<<(n-1))
+
+Questions 5 -
+set the i th bit - set means turn it to 1 if i th bit is one make it one only ;
+if 0 change it to 1
+if 1 remain it 1 only
+use or hear
+1010110  4th
+0001000 - mask we have created
+1011110
+
+Questions 6 -
+reset i th bit :
+if 1 change it to 0
+if 0 remain it 0 only
+use and here
+1010110  3rd
+1101111
+1000110
+
+Questions 6 -
+how we get mask --
+mask -- ! (1<<(n-1)) compliment of this apposite of this
+
+Questions 7 -
+Find the position of the right most set bit
+first one that occurs on the right hand side
+ex - 1 0 1 1 0 1 1 0  ans = 2
+
+ex - 1 0 1 1 0 1 1 0 0   ans
+-N = a | b
+-N = a^ | b
+abs = N & (- N )
+
+**** Negative of a number in binary form :-
+1 byte = 8 bits
+10 => 10 boxes
+-10 = ?
+box 1 -most significant bit , tells us if number is positive or negative , 1 means -ve , 0 means +ve
+box last- list significant bit ,
+except first box other represent value of a number ,
+
+Steps 1 -
+1- compliment of no.
+2- +1 tp it          also known as 2s compliment methods .
+(10)base2 = (00001010)base2
+11110101
+11110101
+11110110base2 => (-10)base10
+
+Compliment of a number
+Range of numbers :
+how many number can be stored in 1 byte -
+
+Range formula :-
+-2^n-1 to (2^n-1) -1
+
+Questions 8 -
+Find the nth magic number :-
+1st magic numbers = 0 0 1 -> 5th  take the addition of power of 5 = 5^0 + 5^1 + 5^1
+2nd magic numbers = 0 1 0 -> 25
+3rd magic numbers = 0 1 1 -> 30 (5+25)
+4th magic numbers = 1 0 0 -> 125
+5th magic numbers = 1 0 1 -> 130
+nth magic numbers = take binary form
+n = 6 , = 1 1 0 ;
+n and 1 = this will give last digit
+n >> 1 write shift -
+n = 6 , = 1 1 0
+0*5^1 + 1*5^2 + 1*5^3
+
+Find no. of digits in base b :--
+decimal (6)base10 = 1
+binary (6)base10 = (110)base2 = 3
+
+how many number of digits are their in the binary represent of n
+= int (logN base b) + 1 ;
+
+Questions 11 -
+Pascal's Triangle ;
+1
+11
+121
+1221
+1331A
+14641
+1 5 10 10 5 1
+find sun of nth row -
+ans - nC0+nC1+nC2+nC3+ ... +nCn = 2^n
+for nth row , sum =
+

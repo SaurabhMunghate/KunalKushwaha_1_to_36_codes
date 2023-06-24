@@ -1,0 +1,15 @@
+time complexity is the mathematical function that tales us  how the  time grows as the input grows -
+function that gives us the relation ship about how the time will grow as the input grows -
+
+linear 0(n) , binary log(n) , constant 0(1)- complexity :-
+
+what do we consider which thinking about complexity :
+1.always look for worst case complexity .
+2.always look at complexity for large / infinity data / always look at the large amount of data
+3. even tho value of actual time is deferment they are all growing linearly
+   we don't care about actual time
+4. 0( n3 + log() )
+5. 0(1) < 0(log(n)) < 0(n) < n*log(n) < 0(2^N)
+
+Big on notation :-
+Big o mega :- opposite of Big on
